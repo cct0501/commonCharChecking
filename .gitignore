@@ -1,0 +1,4 @@
+main.o
+shared.o
+libshared.so
+c.exe
