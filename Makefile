@@ -3,6 +3,9 @@ CC=gcc
 CXX=g++
 
 all : c.exe
+test : c.exe
+	test/test1.sh
+
 c.exe : main.o libshared.so
 	$(CXX) -o c.exe -L$(PWD)/ -Wall main.o libshared.so
 	
